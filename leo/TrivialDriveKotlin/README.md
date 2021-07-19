@@ -42,27 +42,40 @@ GooglePlayデベロッパーコンソールでアプリケーションを作成�
    <img width="716" alt="スクリーンショット 2021-07-19 22 00 42" src="https://user-images.githubusercontent.com/16476224/126163554-11fb189d-777d-48c8-a1aa-6e77431f829a.png">
 
 4. application IDを変更する（R.javaの参照も変更する）<br>
-   https://github.com/LeoAndo/play-billing-samples/pull/1
+   [pull request](https://github.com/LeoAndo/play-billing-samples/pull/1)
 
-5. 本番用署名ファイルを作成し、その署名ファイルを使ってAPKを作成する
+5. 本番用署名ファイルを作成し、その署名ファイルを使ってApp Bundleを作成する
+   <img width="362" alt="スクリーンショット 2021-07-19 22 19 06" src="https://user-images.githubusercontent.com/16476224/126166145-1d48a944-9d2f-4cf0-9f67-2d018d05540b.png">
+[pull request](https://github.com/LeoAndo/play-billing-samples/pull/2)
 
 # GOOGLE PLAY DEVELOPER CONSOLE上の操作
 
-6. 内部テストのためにAPKをGooglePlayにアップロードし、テスターを追加する
-
+6. 内部テストのためにApp BundleをGooglePlayにアップロードし、テスターを追加する
    これらのアカウントはテスト購入を行うことができます<br>
+   <img width="1142" alt="スクリーンショット 2021-07-19 22 36 51" src="https://user-images.githubusercontent.com/16476224/126168546-7c953a3a-a746-422c-9bd4-dca1e01a73ec.png">
+   <img width="1273" alt="スクリーンショット 2021-07-19 22 37 29" src="https://user-images.githubusercontent.com/16476224/126168555-d3536e3d-8f6d-44ef-b8c2-c5cee4ab1ac9.png">
 
-8. [アプリ内製品]で、次の製品IDを使用して製品を作成します。
+
+8. [アプリ内アイテム]で、次のproduct IDを使用して製品を作成します。
    ```
        premium, gas
    ```
+   <img width="1410" alt="スクリーンショット 2021-07-19 22 51 12" src="https://user-images.githubusercontent.com/16476224/126170718-574837db-7636-44ab-b13b-17b37d69c0ff.png">
 
-9. [サブスクリプション]で、次のIDを使用してSUBSCRIPTIONアイテムを作成します。
+   価格設定は以下の範囲で設定すること！<br>
+   <img width="435" alt="スクリーンショット 2021-07-19 22 48 50" src="https://user-images.githubusercontent.com/16476224/126170246-4eac9e03-e8c4-4ead-8476-b5273448825b.png">
+
+
+
+9. [定期購読]で、次のIDを使用して定期購読アイテムを作成します。
    ```
        infinite_gas_monthly, infinite_gas_yearly
    ```
+   <img width="1422" alt="スクリーンショット 2021-07-19 22 57 17" src="https://user-images.githubusercontent.com/16476224/126171634-a4b0a654-c22c-4056-b85d-4cc978b82a4f.png">
 
-10. APKを内部テストチャネルに公開します。 ほぼすぐにテストする準備ができているはずです。<br>
+
+
+10. アプリを内部テストチャネルに公開する。 すぐにテストする準備ができているはず。<br>
  
 # TEST THE CODE
 
