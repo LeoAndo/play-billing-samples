@@ -91,7 +91,7 @@ import kotlin.math.min
  * refresh purchases during onResume.
  */
 
-private const val RECONNECT_TIMER_START_MILLISECONDS = 1L * 1000L
+private const val RECONNECT_TIMER_START_MILLISECONDS = 1L * 1000L // 1 minutes
 private const val RECONNECT_TIMER_MAX_TIME_MILLISECONDS = 1000L * 60L * 15L // 15 minutes
 private const val SKU_DETAILS_REQUERY_TIME = 1000L * 60L * 60L * 4L // 4 hours
 
