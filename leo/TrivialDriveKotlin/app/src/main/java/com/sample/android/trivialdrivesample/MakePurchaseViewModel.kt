@@ -22,6 +22,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import com.sample.android.trivialdrivesample.leo.R
 import kotlinx.coroutines.launch
 import java.util.HashMap
 import kotlin.collections.set

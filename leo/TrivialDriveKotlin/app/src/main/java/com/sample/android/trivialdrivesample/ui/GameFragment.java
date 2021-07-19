@@ -29,9 +29,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import com.sample.android.trivialdrivesample.GameViewModel;
-import com.sample.android.trivialdrivesample.R;
+import com.sample.android.trivialdrivesample.leo.R;
 import com.sample.android.trivialdrivesample.TrivialDriveApplication;
-import com.sample.android.trivialdrivesample.databinding.FragmentGameBinding;
+import com.sample.android.trivialdrivesample.leo.databinding.FragmentGameBinding;
 
 /**
  * This Fragment represents the game world, but it really just exists to bind the variables used

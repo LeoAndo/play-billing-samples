@@ -33,10 +33,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.sample.android.trivialdrivesample.MakePurchaseViewModel;
-import com.sample.android.trivialdrivesample.R;
+import com.sample.android.trivialdrivesample.leo.R;
 import com.sample.android.trivialdrivesample.TrivialDriveApplication;
 import com.sample.android.trivialdrivesample.TrivialDriveRepository;
-import com.sample.android.trivialdrivesample.databinding.FragmentMakePurchaseBinding;
+import com.sample.android.trivialdrivesample.leo.databinding.FragmentMakePurchaseBinding;
 
 import java.util.ArrayList;
 import java.util.List;
