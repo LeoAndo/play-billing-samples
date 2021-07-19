@@ -11,13 +11,13 @@ try {
 
 android {
     signingConfigs {
-        /* TODO(developer): Configure to sign app with a release key for testing.
+        // (developer): Configure to sign app with a release key for testing.
         release {
-            storeFile file('path/to/release/signing/key')
-            keyAlias 'release_key_alias'
-            keyPassword "${password}"
-            storePassword "${password}"
-        }*/
+            storeFile file('../release.jks')
+            keyAlias '1234qwer'
+            keyPassword '1234qwer'
+            storePassword '1234qwer'
+        }
     }
     compileSdkVersion 30
     buildToolsVersion '30.0.3'
@@ -26,8 +26,8 @@ android {
         applicationId 'com.sample.android.trivialdrivesample.leo'
         minSdkVersion 26
         targetSdkVersion 30
-        versionCode 8
-        versionName "1.5"
+        versionCode 1
+        versionName "1.0.0"
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments += ["room.schemaLocation":
@@ -45,8 +45,8 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            // TODO(developer): uncomment below once config above is complete and uncommented.
-            // signingConfig signingConfigs.release
+            // (developer): uncomment below once config above is complete and uncommented.
+            signingConfig signingConfigs.release
         }
     }
     buildFeatures {
